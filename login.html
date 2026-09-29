@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Login - Aprova Já</title>
+
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+
+<body>
+
+    <main class="pagina-login">
+
+
+        <!-- LADO ESQUERDO -->
+
+        <section class="lado-esquerdo">
+
+            <a href="index.html" class="voltar">
+                ← Voltar ao início
+            </a>
+
+
+            <div class="marca">
+
+                <div class="icone-logo">
+                    🎓
+                </div>
+
+                <strong>
+                    Aprova Já
+                </strong>
+
+            </div>
+
+
+            <div class="apresentacao">
+
+                <h1>
+                    Sua aprovação
+                    <br>
+                    começa aqui.
+                </h1>
+
+
+                <p>
+                    Plano de estudos personalizado,
+                    conteúdos gratuitos e simulados
+                    para o ENEM e vestibulares.
+                </p>
+
+
+                <div class="beneficios">
+
+                    <div>
+                        <span>✓</span>
+                        Diagnóstico inteligente de nível
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Cronograma automático personalizado
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Biblioteca com +200h de conteúdo
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Simulados de ENEM, FUVEST e mais
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- LADO DIREITO -->
+
+        <section class="lado-direito">
+
+            <div class="login-container">
+
+
+                <h2>
+                    Bem-vindo de volta!
+                </h2>
+
+
+                <p class="subtitulo">
+                    Entre para continuar seus estudos.
+                </p>
+
+
+
+                <!-- GOOGLE -->
+
+                <button class="login-social">
+
+                    <span class="google">
+                        G
+                    </span>
+
+                    Entrar com Google
+
+                </button>
+
+
+
+                <!-- APPLE -->
+
+                <button class="login-social">
+
+                    <span class="apple">
+                        ●
+                    </span>
+
+                    Entrar com Apple
+
+                </button>
+
+
+
+                <!-- MICROSOFT -->
+
+                <button class="login-social">
+
+                    <span class="microsoft">
+
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+
+                    </span>
+
+                    Entrar com Microsoft
+
+                </button>
+
+
+
+                <!-- DIVISOR -->
+
+                <div class="divisor">
+
+                    <span></span>
+
+                    <p>
+                        ou continue com email
+                    </p>
+
+                    <span></span>
+
+                </div>
+
+
+
+                <!-- FORMULÁRIO -->
+
+                <form id="formLogin">
+
+
+                    <label for="email">
+                        Email
+                    </label>
+
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="joao@email.com"
+                        required
+                    >
+
+
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+
+                    <div class="senha-container">
+
+                        <input
+                            type="password"
+                            id="senha"
+                            placeholder="••••••••"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="mostrarSenha"
+                        >
+                            ◉
+                        </button>
+
+                    </div>
+
+
+
+                    <div class="esqueci">
+
+                        <a href="#">
+                            Esqueceu sua senha?
+                        </a>
+
+                    </div>
+
+
+
+                    <button
+                        type="submit"
+                        class="botao-entrar"
+                    >
+                        Entrar
+                    </button>
+
+
+                    <p id="mensagem"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

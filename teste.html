@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Teste de Nivelamento | Aprova Já</title>
+
+    <link rel="stylesheet" href="teste.css">
+
+</head>
+
+
+<body>
+
+    <main class="pagina-teste">
+
+
+        <!-- CABEÇALHO -->
+
+       <header class="cabecalho">
+
+    <div class="logo">
+
+        <div class="icone-logo">
+            🎓
+        </div>
+
+        <strong>Aprova Já</strong>
+
+    </div>
+
+    <div class="cronometro" id="cronometro">
+        10:00
+    </div>
+
+</header>
+
+    <div class="questao-contador">
+        Questão <strong id="numeroQuestao">1</strong> de 8
+    </div>
+
+
+        <!-- BARRA DE PROGRESSO -->
+
+        <div class="barra">
+
+            <div
+                class="barra-preenchida"
+                id="barraProgresso"
+            ></div>
+
+        </div>
+
+
+
+        <!-- CONTEÚDO -->
+
+        <section class="questao-card">
+
+
+            <!-- MATÉRIA -->
+
+            <div class="materia">
+
+                <span class="icone-materia">
+                    ∑
+                </span>
+
+                <strong id="materia">
+                    Matemática
+                </strong>
+
+            </div>
+
+
+
+            <!-- PERGUNTA -->
+
+            <h1 id="pergunta">
+
+                Qual é o valor de x na equação
+                2x + 6 = 14?
+
+            </h1>
+
+
+
+            <!-- ALTERNATIVAS -->
+
+            <div
+                class="alternativas"
+                id="alternativas"
+            >
+
+                <button
+                    class="alternativa"
+                    data-resposta="A"
+                >
+
+                    <span class="letra">
+                        A
+                    </span>
+
+                    <span>
+                        x = 2
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="alternativa"
+                    data-resposta="B"
+                >
+
+                    <span class="letra">
+                        B
+                    </span>
+
+                    <span>
+                        x = 4
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="alternativa"
+                    data-resposta="C"
+                >
+
+                    <span class="letra">
+                        C
+                    </span>
+
+                    <span>
+                        x = 6
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="alternativa"
+                    data-resposta="D"
+                >
+
+                    <span class="letra">
+                        D
+                    </span>
+
+                    <span>
+                        x = 8
+                    </span>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- RODAPÉ -->
+
+            <div class="rodape">
+
+                <span id="progressoTexto">
+                    1 de 8
+                </span>
+
+
+                <button
+                    class="proxima"
+                    id="proxima"
+                >
+
+                    Próxima
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="teste.js"></script>
+
+</body>
+
+</html>

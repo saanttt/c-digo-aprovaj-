@@ -1,0 +1,591 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f8fafc;
+
+    color: #10182d;
+
+}
+
+
+.pagina-diagnostico {
+
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    padding: 55px 30px 70px;
+
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho-diagnostico {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+
+}
+
+
+.icone-check {
+
+    width: 55px;
+
+    height: 55px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #5146e5;
+
+    color: white;
+
+    font-size: 27px;
+
+    font-weight: bold;
+
+}
+
+
+.cabecalho-diagnostico h1 {
+
+    font-size: 34px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.cabecalho-diagnostico p {
+
+    color: #53657d;
+
+    font-size: 17px;
+
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.grid-desempenho {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 28px;
+
+}
+
+
+.card {
+
+    background: white;
+
+    border: 1px solid #e1e5ea;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+}
+
+
+.card h2 {
+
+    font-size: 23px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =========================
+   GRÁFICO
+========================= */
+
+.visao-geral {
+
+    min-height: 470px;
+
+}
+
+
+.grafico {
+
+    width: 330px;
+
+    height: 330px;
+
+    margin: 20px auto;
+
+    position: relative;
+
+    border-radius: 50%;
+
+}
+
+
+/* círculos do gráfico */
+
+.grafico::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 45px;
+
+    border: 1px solid #dfe4ea;
+
+    border-radius: 50%;
+
+}
+
+
+.grafico::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 95px;
+
+    border: 1px solid #dfe4ea;
+
+    border-radius: 50%;
+
+}
+
+
+/* área preenchida */
+
+.area-grafico {
+
+    position: absolute;
+
+    width: 140px;
+
+    height: 140px;
+
+    top: 95px;
+
+    left: 95px;
+
+    background: rgba(81, 70, 229, .18);
+
+    border: 2px solid #5146e5;
+
+    transform: rotate(0deg);
+
+    clip-path: polygon(
+        50% 0%,
+        85% 15%,
+        100% 50%,
+        85% 85%,
+        50% 100%,
+        15% 85%,
+        0% 50%,
+        15% 15%
+    );
+
+}
+
+
+/* centro */
+
+.grafico-centro {
+
+    position: absolute;
+
+    top: 135px;
+
+    left: 135px;
+
+    width: 60px;
+
+    height: 60px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 5;
+
+}
+
+
+.grafico-centro strong {
+
+    font-size: 18px;
+
+}
+
+
+.grafico-centro span {
+
+    font-size: 10px;
+
+    color: #687a90;
+
+}
+
+
+/* nomes */
+
+.eixo {
+
+    position: absolute;
+
+    font-size: 13px;
+
+    color: #53657d;
+
+    font-weight: 500;
+
+}
+
+
+.eixo-top {
+
+    top: 0;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+}
+
+
+.eixo-right-top {
+
+    top: 45px;
+
+    right: 20px;
+
+}
+
+
+.eixo-right {
+
+    top: 50%;
+
+    right: -5px;
+
+}
+
+
+.eixo-bottom-right {
+
+    bottom: 45px;
+
+    right: 20px;
+
+}
+
+
+.eixo-bottom {
+
+    bottom: 0;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+}
+
+
+.eixo-bottom-left {
+
+    bottom: 45px;
+
+    left: 20px;
+
+}
+
+
+.eixo-left {
+
+    top: 50%;
+
+    left: -5px;
+
+}
+
+
+.eixo-left-top {
+
+    top: 45px;
+
+    left: 20px;
+
+}
+
+
+/* =========================
+   MATÉRIAS
+========================= */
+
+.materia-item {
+
+    margin-bottom: 20px;
+
+}
+
+
+.materia-topo {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 7px;
+
+    color: #53657d;
+
+}
+
+
+.materia-topo strong {
+
+    color: #5146e5;
+
+}
+
+
+.barra-materia {
+
+    width: 100%;
+
+    height: 7px;
+
+    background: #edf1f5;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+.barra-matematica {
+    color: #ff3b3b;
+
+}
+
+.barra-portugues {
+    color: #188ec6
+}
+
+.barra-historia {
+    color: #f5a623
+}
+
+.barra-geografia {
+    color: #00bd5b
+}
+
+.barra-biologia {
+    color: #5146e5
+}
+
+.barra-fisica {
+    color: #ff3b3b
+}
+
+.barra-quimica {
+    color: #188ec6
+}
+
+.barra-redacao {
+    color: #f5a623
+}
+
+
+.preenchimento {
+
+    height: 100%;
+
+    background: #5146e5;
+
+    border-radius: 20px;
+
+}
+
+
+/* =========================
+   RESUMO
+========================= */
+
+.resumo {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 40px;
+
+}
+
+
+.resumo-card {
+
+    background: white;
+
+    border: 1px solid #e1e5ea;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    text-align: center;
+
+}
+
+
+.resumo-card span {
+
+    display: block;
+
+    color: #53657d;
+
+    margin-bottom: 10px;
+
+}
+
+
+.resumo-card strong {
+
+    font-size: 21px;
+
+}
+
+
+.verde {
+
+    color: #00bd5b;
+
+}
+
+
+.vermelho {
+
+    color: #ff3b3b;
+
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.plano {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin: 40px auto 0;
+
+    padding: 17px 35px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: #5146e5;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.plano:hover {
+
+    background: #4238d2;
+
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 800px) {
+
+    .grid-desempenho {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .resumo {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .pagina-diagnostico {
+
+        padding: 35px 15px;
+
+    }
+
+
+    .cabecalho-diagnostico h1 {
+
+        font-size: 28px;
+
+    }
+
+
+    .card {
+
+        padding: 22px;
+
+    }
+
+}

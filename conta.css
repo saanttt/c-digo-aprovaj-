@@ -1,0 +1,686 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #10182d;
+
+    background: #f8fafc;
+}
+
+
+/* =========================
+   PÁGINA
+========================= */
+
+.pagina-login {
+
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+}
+
+
+/* =========================
+   LADO ESQUERDO
+========================= */
+
+.lado-esquerdo {
+
+    min-height: 100vh;
+
+    position: relative;
+
+    padding: 60px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5146e5,
+            #7139e9
+        );
+}
+
+
+/* VOLTAR */
+
+.voltar {
+
+    position: absolute;
+
+    top: 60px;
+    left: 60px;
+
+    color: #e8e6ff;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+.voltar:hover {
+
+    color: white;
+
+}
+
+
+/* LOGO */
+
+.marca {
+
+    position: absolute;
+
+    top: 215px;
+    left: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    font-size: 28px;
+}
+
+
+.icone-logo {
+
+    width: 51px;
+    height: 51px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background:
+        rgba(255, 255, 255, 0.18);
+
+    font-size: 24px;
+}
+
+
+/* APRESENTAÇÃO */
+
+.apresentacao {
+
+    position: absolute;
+
+    top: 335px;
+
+    left: 60px;
+    right: 60px;
+
+    max-width: 650px;
+}
+
+
+.apresentacao h1 {
+
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    margin-bottom: 23px;
+}
+
+
+.apresentacao > p {
+
+    max-width: 630px;
+
+    color: #dedcff;
+
+    font-size: 23px;
+
+    line-height: 1.55;
+
+    margin-bottom: 35px;
+}
+
+
+/* BENEFÍCIOS */
+
+.beneficios {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 17px;
+
+}
+
+
+.beneficios div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    color: #f0efff;
+
+    font-size: 17px;
+}
+
+
+.beneficios span {
+
+    width: 25px;
+    height: 25px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,0.22);
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   LADO DIREITO
+========================= */
+
+.lado-direito {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    padding: 42px 50px;
+
+    background: #f8fafc;
+}
+
+
+.login-container {
+
+    width: 100%;
+
+    max-width: 560px;
+}
+
+
+/* TÍTULO */
+
+.login-container h2 {
+
+    font-size: 31px;
+
+    margin-bottom: 13px;
+}
+
+
+.subtitulo {
+
+    color: #4d607a;
+
+    font-size: 17px;
+
+    margin-bottom: 41px;
+}
+
+
+/* =========================
+   BOTÕES SOCIAIS
+========================= */
+
+.login-social {
+
+    width: 100%;
+
+    height: 58px;
+
+    margin-bottom: 15px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 17px;
+
+    border: 1px solid #dfe3e9;
+
+    border-radius: 17px;
+
+    background: white;
+
+    color: #111a31;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.login-social:hover {
+
+    background: #f3f4f7;
+
+}
+
+
+/* GOOGLE */
+
+.google {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #4285f4;
+}
+
+
+/* APPLE */
+
+.apple {
+
+    color: #11182d;
+
+    font-size: 20px;
+}
+
+
+/* MICROSOFT */
+
+.microsoft {
+
+    width: 22px;
+    height: 22px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows: 1fr 1fr;
+
+    gap: 2px;
+}
+
+
+.microsoft i:nth-child(1) {
+
+    background: #f25022;
+}
+
+
+.microsoft i:nth-child(2) {
+
+    background: #7fba00;
+}
+
+
+.microsoft i:nth-child(3) {
+
+    background: #00a4ef;
+}
+
+
+.microsoft i:nth-child(4) {
+
+    background: #ffb900;
+}
+
+
+/* =========================
+   DIVISOR
+========================= */
+
+.divisor {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 32px 0;
+}
+
+
+.divisor span {
+
+    height: 1px;
+
+    flex: 1;
+
+    background: #d9dde4;
+}
+
+
+.divisor p {
+
+    white-space: nowrap;
+
+    color: #4f6179;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+label {
+
+    display: block;
+
+    margin-bottom: 9px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+
+input {
+
+    width: 100%;
+
+    height: 57px;
+
+    padding: 0 19px;
+
+    margin-bottom: 25px;
+
+    border: 1px solid #d9dfe7;
+
+    border-radius: 17px;
+
+    background: #f1f4f8;
+
+    color: #172039;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+input:focus {
+
+    border-color: #5146e5;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(81,70,229,.08);
+}
+
+
+input::placeholder {
+
+    color: #53647c;
+}
+
+
+/* SENHA */
+
+.senha-container {
+
+    position: relative;
+}
+
+
+.senha-container input {
+
+    padding-right: 55px;
+}
+
+
+.senha-container button {
+
+    position: absolute;
+
+    right: 17px;
+    top: 0;
+
+    width: 35px;
+    height: 57px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #52647d;
+
+    cursor: pointer;
+}
+
+
+/* ESQUECI SENHA */
+
+.esqueci {
+
+    text-align: right;
+
+    margin-bottom: 32px;
+}
+
+
+.esqueci a {
+
+    color: #5146e5;
+
+    font-size: 16px;
+
+    text-decoration: none;
+}
+
+
+.esqueci a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* BOTÃO ENTRAR */
+
+.botao-entrar {
+
+    width: 100%;
+
+    height: 56px;
+
+    border: none;
+
+    border-radius: 17px;
+
+    background: #5146e5;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.botao-entrar:hover {
+
+    background: #4238d2;
+
+    transform: translateY(-1px);
+}
+
+
+#mensagem {
+
+    margin-top: 15px;
+
+    text-align: center;
+
+    color: #5146e5;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 900px) {
+
+    .pagina-login {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .lado-esquerdo {
+
+        min-height: 450px;
+
+    }
+
+
+    .marca {
+
+        top: 120px;
+
+        left: 35px;
+
+    }
+
+
+    .voltar {
+
+        top: 30px;
+
+        left: 35px;
+
+    }
+
+
+    .apresentacao {
+
+        top: 195px;
+
+        left: 35px;
+        right: 35px;
+
+    }
+
+
+    .apresentacao h1 {
+
+        font-size: 34px;
+
+    }
+
+
+    .apresentacao > p {
+
+        font-size: 18px;
+
+    }
+
+
+    .lado-direito {
+
+        padding: 50px 25px;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .lado-esquerdo {
+
+        min-height: 470px;
+
+    }
+
+
+    .apresentacao {
+
+        top: 190px;
+
+    }
+
+
+    .apresentacao h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .apresentacao > p {
+
+        font-size: 17px;
+
+    }
+
+
+    .beneficios {
+
+        gap: 12px;
+
+    }
+
+
+    .beneficios div {
+
+        font-size: 14px;
+
+    }
+
+
+    .lado-direito {
+
+        padding: 35px 20px;
+
+    }
+
+
+    .login-container h2 {
+
+        font-size: 27px;
+
+    }
+
+}

@@ -1,0 +1,592 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f8fafc;
+
+    color: #10182d;
+
+}
+
+
+.pagina-teste {
+
+    min-height: 100vh;
+
+    padding: 28px 20px 50px;
+
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+
+    width: 760px;
+
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 20px;
+
+}
+
+
+.icone-logo {
+
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #5146e5;
+
+    color: white;
+
+}
+
+
+.questao-contador {
+
+    width: 760px;
+
+    max-width: 100%;
+
+    margin: 20px auto 0;
+
+    color: #53657d;
+
+    font-size: 15px;
+
+}
+
+.questao-contador strong {
+
+    color: #10182d;
+
+}
+
+
+.questao-contador strong {
+
+    color: #10182d;
+
+}
+
+
+/* =========================
+   BARRA
+========================= */
+
+.barra {
+
+    width: 760px;
+
+    max-width: 100%;
+
+    height: 7px;
+
+    margin: 24px auto 45px;
+
+    background: #e9edf2;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+
+.barra-preenchida {
+
+    width: 12.5%;
+
+    height: 100%;
+
+    background: #5146e5;
+
+    border-radius: 20px;
+
+    transition: width .3s ease;
+
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.questao-card {
+
+    width: 760px;
+
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    padding: 42px;
+
+    background: white;
+
+    border: 1px solid #e1e5ea;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 5px 20px rgba(20, 30, 50, .04);
+
+}
+
+
+/* =========================
+   MATÉRIA
+========================= */
+
+.materia {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 32px;
+
+    color: #5146e5;
+
+    font-size: 17px;
+
+}
+
+
+.icone-materia {
+
+    width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: #eeedff;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   PERGUNTA
+========================= */
+
+.questao-card h1 {
+
+    max-width: 680px;
+
+    font-size: 27px;
+
+    line-height: 1.4;
+
+    margin-bottom: 32px;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================
+   ALTERNATIVAS
+========================= */
+
+.alternativas {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+
+}
+
+
+.alternativa {
+
+    width: 100%;
+
+    min-height: 65px;
+
+    padding: 10px 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+    border: 1px solid #dfe4ea;
+
+    border-radius: 15px;
+
+    background: white;
+
+    color: #10182d;
+
+    font-size: 17px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+
+.alternativa:hover {
+
+    border-color: #5146e5;
+
+    background: #fafaff;
+
+}
+
+
+.alternativa.selecionada {
+
+    border: 2px solid #5146e5;
+
+    background: #f2f1ff;
+
+}
+
+
+.letra {
+
+    width: 35px;
+
+    height: 35px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #dfe4ea;
+
+    border-radius: 50%;
+
+    color: #53657d;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+.alternativa.selecionada .letra {
+
+    background: #5146e5;
+
+    border-color: #5146e5;
+
+    color: white;
+
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+.rodape {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: 35px;
+
+}
+
+
+.rodape > span {
+
+    color: #687a90;
+
+    font-size: 14px;
+
+}
+
+
+.proxima {
+
+    min-width: 145px;
+
+    height: 50px;
+
+    padding: 0 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: #5146e5;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+
+.proxima:hover {
+
+    background: #4238d2;
+
+    transform: translateY(-1px);
+
+}
+
+
+.proxima span {
+
+    font-size: 21px;
+
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 600px) {
+
+    .pagina-teste {
+
+        padding: 20px 15px 35px;
+
+    }
+
+
+    .cabecalho {
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+    }
+
+
+    .questao-contador {
+
+        margin-top: 10px;
+
+    }
+
+
+    .barra {
+
+        margin-top: 20px;
+
+        margin-bottom: 25px;
+
+    }
+
+
+    .questao-card {
+
+        padding: 28px 20px;
+
+    }
+
+
+    .questao-card h1 {
+
+        font-size: 22px;
+
+    }
+
+
+    .alternativa {
+
+        min-height: 60px;
+
+        font-size: 16px;
+
+    }
+
+
+    .rodape {
+
+        gap: 15px;
+
+    }
+
+}
+
+/* =========================
+   CRONÔMETRO
+========================= */
+
+.cronometro {
+
+    position: fixed;
+
+    top: 25px;
+
+    right: 30px;
+
+    padding: 10px 16px;
+
+    background: white;
+
+    border: 1px solid #e1e5ea;
+
+    border-radius: 12px;
+
+    color: #5146e5;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 4px 12px rgba(20, 30, 50, 0.06);
+
+}
+
+
+/* Quando estiver acabando */
+
+.cronometro.urgente {
+
+    color: #e53935;
+
+    background: #fff5f5;
+
+    border-color: #ffd5d5;
+
+}
+
+/* =========================
+   RESPOSTA CORRETA
+========================= */
+
+.alternativa.correta {
+
+    border: 1px solid #00c853;
+
+    background: #effcf4;
+
+    color: #009b42;
+
+}
+
+
+.alternativa.correta .letra {
+
+    background: #00c853;
+
+    border-color: #00c853;
+
+    color: white;
+
+}
+
+
+/* =========================
+   RESPOSTA ERRADA
+========================= */
+
+.alternativa.errada {
+
+    border: 1px solid #ff3b3b;
+
+    background: #fff1f1;
+
+    color: #d71920;
+
+}
+
+
+.alternativa.errada .letra {
+
+    background: #ff3b3b;
+
+    border-color: #ff3b3b;
+
+    color: white;
+
+}
+
+
+/* Não deixa passar o mouse
+   como se pudesse selecionar novamente */
+
+.alternativa.correta,
+.alternativa.errada {
+
+    cursor: default;
+
+}

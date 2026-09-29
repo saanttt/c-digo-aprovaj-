@@ -1,0 +1,555 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f9fc;
+    color: #10182d;
+}
+
+
+/* =========================
+   MENU LATERAL
+========================= */
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 320px;
+    height: 100vh;
+
+    background: white;
+    border-right: 1px solid #e3e7ed;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* LOGO */
+
+.logo {
+    height: 105px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 0 22px;
+
+    border-bottom: 1px solid #e3e7ed;
+
+    font-size: 21px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #5146e5;
+    color: white;
+
+    border-radius: 12px;
+}
+
+
+/* MENU */
+
+nav {
+    padding-top: 18px;
+}
+
+.menu-item {
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 17px;
+
+    padding: 0 22px;
+
+    text-decoration: none;
+
+    color: #31445f;
+
+    font-size: 18px;
+}
+
+.menu-item span {
+    width: 24px;
+
+    font-size: 25px;
+
+    text-align: center;
+}
+
+.menu-item:hover {
+    background: #f5f5ff;
+}
+
+.menu-item.ativo {
+    color: #5146e5;
+    background: #eeeeff;
+}
+
+
+/* SAIR */
+
+.sair {
+    margin-top: auto;
+
+    height: 110px;
+
+    border-top: 1px solid #e3e7ed;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 0 30px;
+
+    color: #31445f;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.conteudo {
+    margin-left: 320px;
+
+    min-height: 100vh;
+
+    padding-bottom: 30px;
+}
+
+
+/* =========================
+   TOPO
+========================= */
+
+.topo {
+    height: 105px;
+
+    background: white;
+
+    border-bottom: 1px solid #e3e7ed;
+
+    padding: 20px 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topo h1 {
+    font-size: 31px;
+    margin-bottom: 7px;
+}
+
+.topo p {
+    color: #53657d;
+    font-size: 16px;
+}
+
+
+/* BOTÃO */
+
+.btn-adicionar {
+    border: none;
+
+    background: #5146e5;
+    color: white;
+
+    padding: 13px 23px;
+
+    border-radius: 15px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.btn-adicionar:hover {
+    background: #4238d2;
+}
+
+
+/* =========================
+   CONTROLE
+========================= */
+
+.controle {
+    height: 100px;
+
+    padding: 25px 35px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.semana {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    font-size: 18px;
+}
+
+.semana button {
+    width: 40px;
+    height: 40px;
+
+    border: none;
+
+    background: #eef2f7;
+
+    border-radius: 12px;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    color: #53657d;
+}
+
+.visualizacao {
+    display: flex;
+    gap: 10px;
+}
+
+.visualizacao button {
+    border: 1px solid #e1e5ea;
+
+    background: white;
+
+    padding: 9px 17px;
+
+    border-radius: 13px;
+
+    color: #53657d;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.visualizacao .selecionado {
+    font-weight: bold;
+}
+
+
+/* =========================
+   CALENDÁRIO
+========================= */
+
+.calendario {
+    margin: 0 30px;
+
+    background: white;
+
+    border: 1px solid #e0e4e9;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+/* DIAS */
+
+.dias {
+    display: grid;
+
+    grid-template-columns: 80px repeat(7, 1fr);
+
+    height: 78px;
+
+    border-bottom: 1px solid #e1e5ea;
+}
+
+.dias > div {
+    border-right: 1px solid #e1e5ea;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #53657d;
+
+    font-size: 15px;
+}
+
+.dias strong {
+    margin-top: 7px;
+
+    color: #10182d;
+
+    font-size: 17px;
+}
+
+
+/* LINHAS */
+
+.linha {
+    display: grid;
+
+    grid-template-columns: 80px repeat(7, 1fr);
+
+    height: 68px;
+
+    border-bottom: 1px solid #e1e5ea;
+}
+
+.linha > span {
+    padding: 11px 13px;
+
+    color: #64748b;
+
+    border-right: 1px solid #e1e5ea;
+
+    font-size: 15px;
+}
+
+.linha > div {
+    border-right: 1px solid #e1e5ea;
+}
+
+
+/* =========================
+   ATIVIDADES
+========================= */
+
+.atividade {
+    margin: 4px;
+
+    padding: 8px 10px;
+
+    border-radius: 14px;
+
+    font-size: 14px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    border-left: 3px solid;
+}
+
+.atividade strong {
+    margin-bottom: 3px;
+}
+
+
+/* MATEMÁTICA */
+
+.matematica {
+    color: #5146e5;
+    background: #eeeeff;
+    border-color: #5146e5;
+}
+
+
+/* REDAÇÃO */
+
+.redacao {
+    color: #e78b00;
+    background: #fff4df;
+    border-color: #f59e0b;
+}
+
+
+/* FÍSICA */
+
+.fisica {
+    color: #ef3f91;
+    background: #ffe8f2;
+    border-color: #ef3f91;
+}
+
+
+/* BIOLOGIA */
+
+.biologia {
+    color: #00a9c7;
+    background: #e4f8fc;
+    border-color: #00a9c7;
+}
+
+
+/* HISTÓRIA */
+
+.historia {
+    color: #8155ed;
+    background: #eee8ff;
+    border-color: #8155ed;
+}
+
+
+/* QUÍMICA */
+
+.quimica {
+    color: #16a34a;
+    background: #e5f8eb;
+    border-color: #16a34a;
+}
+
+
+/* SIMULADO */
+
+.simulado {
+    color: #ef4444;
+    background: #ffe9e9;
+    border-color: #ef4444;
+}
+
+
+/* =========================
+   RESUMO
+========================= */
+
+.resumo {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin: 28px 30px 0;
+}
+
+.resumo-card {
+    height: 100px;
+
+    background: white;
+
+    border: 1px solid #e1e5ea;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.resumo-card strong {
+    color: #5146e5;
+
+    font-size: 27px;
+
+    margin-bottom: 7px;
+}
+
+.resumo-card span {
+    color: #53657d;
+}
+
+.resumo-card.verde strong {
+    color: #16c765;
+}
+
+.resumo-card.vermelho strong {
+    color: #ef4444;
+}
+
+.resumo-card.laranja strong {
+    color: #f59e0b;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        width: 220px;
+    }
+
+    .conteudo {
+        margin-left: 220px;
+    }
+
+    .logo strong,
+    .menu-item {
+        font-size: 15px;
+    }
+
+    .resumo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .conteudo {
+        margin-left: 0;
+    }
+
+    .topo {
+        padding: 20px;
+    }
+
+    .topo h1 {
+        font-size: 23px;
+    }
+
+    .btn-adicionar {
+        font-size: 14px;
+    }
+
+    .calendario {
+        margin: 0 15px;
+        overflow-x: auto;
+    }
+
+    .dias,
+    .linha {
+        min-width: 900px;
+    }
+
+    .resumo {
+        grid-template-columns: 1fr 1fr;
+        margin: 20px 15px;
+    }
+
+}
+
+.menu-item {
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}

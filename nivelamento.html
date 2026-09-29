@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Teste de Nivelamento | Aprova Já</title>
+
+    <link rel="stylesheet" href="nivelamento.css">
+
+</head>
+
+
+<body>
+
+    <main class="pagina">
+
+        <!-- LOGO -->
+
+        <header class="logo">
+
+            <div class="icone-logo">
+                🎓
+            </div>
+
+            <strong>Aprova Já</strong>
+
+        </header>
+
+
+        <!-- INDICADOR DE ETAPAS -->
+
+        <div class="etapas">
+
+            <div class="etapa ativa" data-step="1">
+
+                <div class="numero">
+                    1
+                </div>
+
+                <span>
+                    Vestibular
+                </span>
+
+            </div>
+
+
+            <div class="etapa" data-step="2">
+
+                <div class="numero">
+                    2
+                </div>
+
+                <span>
+                    Objetivo
+                </span>
+
+            </div>
+
+
+            <div class="etapa" data-step="3">
+
+                <div class="numero">
+                    3
+                </div>
+
+                <span>
+                    Disponibilidade
+                </span>
+
+            </div>
+
+
+            <div class="etapa" data-step="4">
+
+                <div class="numero">
+                    4
+                </div>
+
+                <span>
+                    Nivelamento
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- BARRA DE PROGRESSO -->
+
+        <div class="progresso">
+
+            <div
+                class="progresso-preenchido"
+                id="barraProgresso"
+            ></div>
+
+        </div>
+
+
+
+        <!-- ==========================
+             PASSO 1
+        =========================== -->
+
+        <section
+            class="card passo ativo"
+            id="passo1"
+        >
+
+            <h1>
+                Qual prova você deseja prestar?
+            </h1>
+
+            <p class="descricao">
+                Vamos personalizar seu plano de estudos.
+            </p>
+
+
+            <div class="opcoes">
+
+                <button class="opcao" data-value="ENEM">
+                    ENEM
+                </button>
+
+                <button class="opcao" data-value="FUVEST">
+                    FUVEST
+                </button>
+
+                <button class="opcao" data-value="UNICAMP">
+                    UNICAMP
+                </button>
+
+                <button class="opcao" data-value="UNESP">
+                    UNESP
+                </button>
+
+                <button class="opcao" data-value="UERJ">
+                    UERJ
+                </button>
+
+                <button class="opcao" data-value="UFRGS">
+                    UFRGS
+                </button>
+
+                <button class="opcao" data-value="UFPR">
+                    UFPR
+                </button>
+
+                <button class="opcao" data-value="Outro">
+                    Outro
+                </button>
+
+            </div>
+
+
+            <div class="rodape-card">
+
+                <span>
+                    Passo 1 de 4
+                </span>
+
+                <button
+                    class="continuar"
+                    id="continuar1"
+                >
+                    Continuar
+                    <span>›</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================
+             PASSO 2
+        =========================== -->
+
+        <section
+            class="card passo"
+            id="passo2"
+        >
+
+            <h1>
+                Qual é o seu objetivo?
+            </h1>
+
+            <p class="descricao">
+                Isso nos ajuda a definir a intensidade do seu plano.
+            </p>
+
+
+            <div class="opcoes coluna">
+
+                <button class="opcao" data-value="Aprovação em universidade pública federal">
+                    Aprovação em universidade pública federal
+                </button>
+
+                <button class="opcao" data-value="Aprovação em universidade pública estadual">
+                    Aprovação em universidade pública estadual
+                </button>
+
+                <button class="opcao" data-value="Bolsa no ProUni / SISU">
+                    Bolsa no ProUni / SISU
+                </button>
+
+                <button class="opcao" data-value="Melhora de nota no ENEM">
+                    Melhora de nota no ENEM
+                </button>
+
+                <button class="opcao" data-value="Ingresso em curso técnico">
+                    Ingresso em curso técnico
+                </button>
+
+            </div>
+
+
+            <div class="rodape-card">
+
+                <button
+                    class="voltar"
+                    id="voltar2"
+                >
+                    Voltar
+                </button>
+
+                <button
+                    class="continuar"
+                    id="continuar2"
+                >
+                    Continuar
+                    <span>›</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================
+             PASSO 3
+        =========================== -->
+
+        <section
+            class="card passo"
+            id="passo3"
+        >
+
+            <h1>
+                Quantas horas por semana você pode estudar?
+            </h1>
+
+            <p class="descricao">
+                Vamos criar um cronograma realista para você.
+            </p>
+
+
+            <div class="opcoes coluna">
+
+                <button class="opcao" data-value="1–2h por semana">
+                    1–2h por semana
+                </button>
+
+                <button class="opcao" data-value="3–5h por semana">
+                    3–5h por semana
+                </button>
+
+                <button class="opcao" data-value="6–10h por semana">
+                    6–10h por semana
+                </button>
+
+                <button class="opcao" data-value="10–15h por semana">
+                    10–15h por semana
+                </button>
+
+                <button class="opcao" data-value="Mais de 15h por semana">
+                    Mais de 15h por semana
+                </button>
+
+            </div>
+
+
+            <div class="rodape-card">
+
+                <button
+                    class="voltar"
+                    id="voltar3"
+                >
+                    Voltar
+                </button>
+
+                <button
+                    class="continuar"
+                    id="continuar3"
+                >
+                    Continuar
+                    <span>›</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================
+             PASSO 4
+        =========================== -->
+
+        <section
+            class="card final passo"
+            id="passo4"
+        >
+
+            <div class="icone-final">
+                ✓
+            </div>
+
+
+            <h1>
+                Hora do teste de nivelamento!
+            </h1>
+
+
+            <p class="texto-final">
+
+                Agora vamos descobrir seu nível em cada matéria
+                com um diagnóstico rápido de 20 questões.
+                Leva cerca de 15 minutos.
+
+            </p>
+
+
+            <!-- RESUMO -->
+
+            <div class="resumo">
+
+                <div class="resumo-item">
+
+                    <span>
+                        Vestibular
+                    </span>
+
+                    <strong id="resumoVestibular">
+                        ENEM
+                    </strong>
+
+                </div>
+
+
+                <div class="resumo-item">
+
+                    <span>
+                        Objetivo
+                    </span>
+
+                    <strong id="resumoObjetivo">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="resumo-item">
+
+                    <span>
+                        Disponibilidade
+                    </span>
+
+                    <strong id="resumoDisponibilidade">
+                        -
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="rodape-card">
+
+                <button
+                    class="voltar"
+                    id="voltar4"
+                >
+                    Voltar
+                </button>
+
+
+                <button
+                    class="iniciar"
+                    id="iniciarTeste"
+                >
+                    Iniciar Teste
+                    <span>›</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="nivelamento.js"></script>
+
+</body>
+
+</html>

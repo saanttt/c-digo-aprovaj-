@@ -1,0 +1,815 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8fafc;
+    color: #10182d;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+
+    position: fixed;
+
+    left: 0;
+    top: 0;
+
+    width: 320px;
+    height: 100vh;
+
+    background: white;
+
+    border-right: 1px solid #e5e7eb;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.logo {
+
+    height: 95px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 0 20px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    font-size: 21px;
+
+}
+
+
+.icone-logo {
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background: #5146e5;
+
+    color: white;
+
+    font-size: 21px;
+
+}
+
+
+nav {
+
+    padding-top: 20px;
+
+}
+
+
+.menu-item {
+
+    width: 100%;
+
+    height: 55px;
+
+    border: none;
+
+    background: transparent;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    padding-left: 22px;
+
+    color: #30405c;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    text-align: left;
+
+}
+
+
+.menu-item span {
+
+    width: 22px;
+
+    font-size: 21px;
+
+}
+
+
+.menu-item:hover {
+
+    background: #f4f5ff;
+
+}
+
+
+.menu-item.ativo {
+
+    background: #eef0ff;
+
+    color: #5146e5;
+
+}
+
+
+.sair {
+
+    margin-top: auto;
+
+    height: 75px;
+
+    border: none;
+
+    border-top: 1px solid #e5e7eb;
+
+    background: white;
+
+    text-align: left;
+
+    padding-left: 30px;
+
+    color: #30405c;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+}
+
+
+.sair span {
+
+    margin-right: 15px;
+
+    font-size: 22px;
+
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.conteudo {
+
+    margin-left: 320px;
+
+    min-height: 100vh;
+
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+
+    height: 110px;
+
+    background: white;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    padding: 0 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.cabecalho h1 {
+
+    font-size: 30px;
+
+    margin-bottom: 6px;
+
+}
+
+
+.cabecalho p {
+
+    color: #526580;
+
+    font-size: 16px;
+
+}
+
+
+.acoes {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.pesquisa {
+
+    width: 280px;
+
+    height: 50px;
+
+    border: 1px solid #dfe4ea;
+
+    background: #f4f7fb;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 0 17px;
+
+    color: #526580;
+
+}
+
+
+.notificacao {
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f1f4f8;
+
+    cursor: pointer;
+
+    font-size: 19px;
+
+}
+
+
+.avatar {
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    background: #5146e5;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+
+    padding: 30px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.card {
+
+    background: white;
+
+    border: 1px solid #e1e5ea;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+}
+
+
+.card-topo {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+
+.icone-card {
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+
+}
+
+
+.roxo {
+    background: #eef0ff;
+    color: #5146e5;
+}
+
+
+.verde {
+    background: #eafbf1;
+    color: #00bd55;
+}
+
+
+.amarelo {
+    background: #fff8e7;
+    color: #ff9d00;
+}
+
+
+.azul {
+    background: #e8fbff;
+    color: #00aeca;
+}
+
+
+.variacao {
+
+    background: #edfff4;
+
+    color: #00ad4b;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+}
+
+
+.card strong {
+
+    display: block;
+
+    font-size: 31px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.card p {
+
+    color: #526580;
+
+}
+
+
+/* =========================
+   GRÁFICOS
+========================= */
+
+.graficos {
+
+    padding: 0 30px 30px;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 30px;
+
+}
+
+
+.grafico-card {
+
+    background: white;
+
+    border: 1px solid #e1e5ea;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+}
+
+
+.grafico-card h2 {
+
+    font-size: 25px;
+
+}
+
+
+.titulo-grafico {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.legenda {
+
+    display: flex;
+
+    gap: 18px;
+
+    color: #526580;
+
+    font-size: 14px;
+
+}
+
+
+.legenda i {
+
+    width: 15px;
+    height: 6px;
+
+    display: inline-block;
+
+    border-radius: 10px;
+
+    margin-right: 5px;
+
+}
+
+
+.mat {
+    background: #5146e5;
+}
+
+.bio {
+    background: #16c766;
+}
+
+.fis {
+    background: #ff9d00;
+}
+
+
+/* =========================
+   GRÁFICO
+========================= */
+
+.grafico {
+
+    position: relative;
+
+    height: 290px;
+
+    margin-top: 25px;
+
+}
+
+
+.linha {
+
+    position: absolute;
+
+    left: 45px;
+
+    right: 10px;
+
+    border-top: 1px dashed #e3e7ec;
+
+}
+
+
+.linha span {
+
+    position: absolute;
+
+    left: -35px;
+
+    top: -10px;
+
+    color: #62738a;
+
+    font-size: 13px;
+
+}
+
+
+.linha100 {
+    top: 10px;
+}
+
+.linha75 {
+    top: 70px;
+}
+
+.linha50 {
+    top: 130px;
+}
+
+.linha25 {
+    top: 190px;
+}
+
+.linha0 {
+    top: 250px;
+}
+
+
+.grafico svg {
+
+    position: absolute;
+
+    left: 45px;
+
+    right: 10px;
+
+    top: 10px;
+
+    width: calc(100% - 55px);
+
+    height: 250px;
+
+}
+
+
+.grafico polyline {
+
+    fill: none;
+
+    stroke-width: 3;
+
+}
+
+
+.linha-mat {
+
+    stroke: #5146e5;
+
+}
+
+
+.linha-bio {
+
+    stroke: #16c766;
+
+}
+
+
+.linha-fis {
+
+    stroke: #ff9d00;
+
+}
+
+
+.dias {
+
+    position: absolute;
+
+    left: 45px;
+
+    right: 10px;
+
+    bottom: 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #62738a;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================
+   HORAS
+========================= */
+
+.grafico-barras {
+
+    height: 290px;
+
+    margin-top: 25px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+}
+
+
+.grafico-barras > div {
+
+    height: 250px;
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+}
+
+
+.barra-h {
+
+    width: 25px;
+
+    background: #5146e5;
+
+    border-radius: 7px 7px 0 0;
+
+    min-height: 10px;
+
+}
+
+
+.grafico-barras small {
+
+    margin-top: 10px;
+
+    color: #62738a;
+
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 1000px) {
+
+    .menu {
+
+        width: 230px;
+
+    }
+
+    .conteudo {
+
+        margin-left: 230px;
+
+    }
+
+    .cards {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .graficos {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .menu {
+
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+
+    }
+
+    .logo {
+
+        height: 75px;
+
+    }
+
+    nav {
+
+        display: flex;
+
+        overflow-x: auto;
+
+    }
+
+    .menu-item {
+
+        min-width: 150px;
+
+    }
+
+    .sair {
+
+        display: none;
+
+    }
+
+    .conteudo {
+
+        margin-left: 0;
+
+    }
+
+    .cabecalho {
+
+        height: auto;
+
+        padding: 25px;
+
+        gap: 20px;
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+    .acoes {
+
+        width: 100%;
+
+    }
+
+    .pesquisa {
+
+        flex: 1;
+
+    }
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+        padding: 20px;
+
+    }
+
+    .graficos {
+
+        padding: 0 20px 20px;
+
+    }
+
+}
+

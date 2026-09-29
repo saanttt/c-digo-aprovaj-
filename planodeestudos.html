@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | Aprova Já</title>
+
+    <link rel="stylesheet" href="planodeestudos.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         MENU LATERAL
+    ========================== -->
+
+    <aside class="menu">
+
+        <div class="logo">
+
+            <div class="icone-logo">
+                🎓
+            </div>
+
+            <strong>Aprova Já</strong>
+
+        </div>
+
+
+        <nav>
+
+            <button class="menu-item ativo">
+                <span>▦</span>
+                Dashboard
+            </button>
+
+            <button
+        class="menu-item"
+        onclick="window.location.href='plano-estudos.html'"
+>
+        <span>📖</span>
+        Plano de Estudos
+            </button>
+            
+            <button class="menu-item">
+                <span>▥</span>
+                Conteúdos
+            </button>
+
+            <button class="menu-item">
+                <span>▤</span>
+                Simulados
+            </button>
+
+            <button class="menu-item">
+                <span>↗</span>
+                Progresso
+            </button>
+
+            <button class="menu-item">
+                <span>⚙</span>
+                Configurações
+            </button>
+
+        </nav>
+
+
+        <button class="sair">
+            <span>↪</span>
+            Sair
+        </button>
+
+    </aside>
+
+
+    <!-- =========================
+         CONTEÚDO
+    ========================== -->
+
+    <main class="conteudo">
+
+
+        <!-- CABEÇALHO -->
+
+        <header class="cabecalho">
+
+            <div>
+
+                <h1>
+                    Bom dia, João! 👋
+                </h1>
+
+                <p>
+                    Você tem 2 atividades hoje.
+                </p>
+
+            </div>
+
+
+            <div class="acoes">
+
+                <div class="pesquisa">
+                    🔍
+                    <span>Buscar conteúdo...</span>
+                </div>
+
+                <button class="notificacao">
+                    🔔
+                </button>
+
+                <div class="avatar">
+                    JM
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             CARDS
+        ========================== -->
+
+        <section class="cards">
+
+
+            <div class="card">
+
+                <div class="card-topo">
+
+                    <div class="icone-card roxo">
+                        ◷
+                    </div>
+
+                    <span class="variacao">
+                        +12%
+                    </span>
+
+                </div>
+
+                <strong>
+                    42h
+                </strong>
+
+                <p>
+                    Horas estudadas
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-topo">
+
+                    <div class="icone-card verde">
+                        ◎
+                    </div>
+
+                    <span class="variacao">
+                        +5%
+                    </span>
+
+                </div>
+
+                <strong>
+                    87%
+                </strong>
+
+                <p>
+                    Meta semanal
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-topo">
+
+                    <div class="icone-card amarelo">
+                        ▢
+                    </div>
+
+                    <span class="variacao">
+                        +3
+                    </span>
+
+                </div>
+
+                <strong>
+                    24
+                </strong>
+
+                <p>
+                    Conteúdos
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-topo">
+
+                    <div class="icone-card azul">
+                        ▤
+                    </div>
+
+                    <span class="variacao">
+                        +2
+                    </span>
+
+                </div>
+
+                <strong>
+                    8
+                </strong>
+
+                <p>
+                    Simulados
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =========================
+             GRÁFICOS
+        ========================== -->
+
+        <section class="graficos">
+
+
+            <!-- EVOLUÇÃO -->
+
+            <div class="grafico-card grande">
+
+                <div class="titulo-grafico">
+
+                    <h2>
+                        Evolução de Desempenho
+                    </h2>
+
+                    <div class="legenda">
+
+                        <span>
+                            <i class="mat"></i>
+                            Mat
+                        </span>
+
+                        <span>
+                            <i class="bio"></i>
+                            Bio
+                        </span>
+
+                        <span>
+                            <i class="fis"></i>
+                            Fís
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="grafico">
+
+                    <div class="linha linha100">
+                        <span>100</span>
+                    </div>
+
+                    <div class="linha linha75">
+                        <span>75</span>
+                    </div>
+
+                    <div class="linha linha50">
+                        <span>50</span>
+                    </div>
+
+                    <div class="linha linha25">
+                        <span>25</span>
+                    </div>
+
+                    <div class="linha linha0">
+                        <span>0</span>
+                    </div>
+
+
+                    <svg
+                        viewBox="0 0 600 250"
+                        preserveAspectRatio="none"
+                    >
+
+                        <polyline
+                            class="linha-mat"
+                            points="0,150 120,140 240,120 360,110 480,90 600,70"
+                        />
+
+                        <polyline
+                            class="linha-bio"
+                            points="0,150 120,145 240,125 360,110 480,92 600,75"
+                        />
+
+                        <polyline
+                            class="linha-fis"
+                            points="0,150 120,142 240,123 360,108 480,90 600,70"
+                        />
+
+                    </svg>
+
+
+                    <div class="dias">
+
+                        <span>Sem 1</span>
+                        <span>Sem 2</span>
+                        <span>Sem 3</span>
+                        <span>Sem 4</span>
+                        <span>Sem 5</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HORAS -->
+
+            <div class="grafico-card horas">
+
+                <h2>
+                    Horas esta semana
+                </h2>
+
+
+                <div class="grafico-barras">
+
+                    <div>
+                        <span class="barra-h" style="height: 60%;"></span>
+                        <small>Seg</small>
+                    </div>
+
+                    <div>
+                        <span class="barra-h" style="height: 45%;"></span>
+                        <small>Ter</small>
+                    </div>
+
+                    <div>
+                        <span class="barra-h" style="height: 80%;"></span>
+                        <small>Qua</small>
+                    </div>
+
+                    <div>
+                        <span class="barra-h" style="height: 20%;"></span>
+                        <small>Qui</small>
+                    </div>
+
+                    <div>
+                        <span class="barra-h" style="height: 100%;"></span>
+                        <small>Sex</small>
+                    </div>
+
+                    <div>
+                        <span class="barra-h" style="height: 65%;"></span>
+                        <small>Sáb</small>
+                    </div>
+
+                    <div>
+                        <span class="barra-h" style="height: 35%;"></span>
+                        <small>Dom</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="planodeestudos.js"></script>
+
+</body>
+
+</html>

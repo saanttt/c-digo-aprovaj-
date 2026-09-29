@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Diagnóstico | Aprova Já</title>
+
+    <link rel="stylesheet" href="diagnostico.css">
+
+</head>
+
+<body>
+
+    <main class="pagina-diagnostico">
+
+        <!-- TÍTULO -->
+
+        <section class="cabecalho-diagnostico">
+
+            <div class="icone-check">
+                ✓
+            </div>
+
+            <h1>
+                Diagnóstico concluído!
+            </h1>
+
+            <p>
+                Veja seu desempenho por matéria e conheça seus pontos de melhora.
+            </p>
+
+        </section>
+
+
+        <!-- DESEMPENHO -->
+
+        <section class="grid-desempenho">
+
+
+            <!-- VISÃO GERAL -->
+
+            <div class="card visao-geral">
+
+                <h2>
+                    Visão geral
+                </h2>
+
+                <div class="grafico">
+
+                    <div class="grafico-centro">
+                        <strong id="mediaGrafico">0%</strong>
+                        <span>Média</span>
+                    </div>
+
+                    <div class="eixo eixo-top">
+                        MAT
+                    </div>
+
+                    <div class="eixo eixo-right-top">
+                        POR
+                    </div>
+
+                    <div class="eixo eixo-right">
+                        FÍS
+                    </div>
+
+                    <div class="eixo eixo-bottom-right">
+                        QUÍ
+                    </div>
+
+                    <div class="eixo eixo-bottom">
+                        BIO
+                    </div>
+
+                    <div class="eixo eixo-bottom-left">
+                        HIS
+                    </div>
+
+                    <div class="eixo eixo-left">
+                        GEO
+                    </div>
+
+                    <div class="eixo eixo-left-top">
+                        RED
+                    </div>
+
+                    <div
+                        class="area-grafico"
+                        id="areaGrafico"
+                    ></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DESEMPENHO POR MATÉRIA -->
+
+            <div class="card materias">
+
+                <h2>
+                    Desempenho por matéria
+                </h2>
+
+                <div id="listaMaterias"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESUMO -->
+
+        <section class="resumo">
+
+            <div class="resumo-card">
+
+                <span>
+                    Melhor matéria
+                </span>
+
+                <strong
+                    id="melhorMateria"
+                    class="verde"
+                >
+                    -
+                </strong>
+
+            </div>
+
+
+            <div class="resumo-card">
+
+                <span>
+                    Precisa de atenção
+                </span>
+
+                <strong
+                    id="piorMateria"
+                    class="vermelho"
+                >
+                    -
+                </strong>
+
+            </div>
+
+
+            <div class="resumo-card">
+
+                <span>
+                    Média geral
+                </span>
+
+                <strong id="mediaGeral">
+                    -
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOTÃO -->
+
+        <button
+            class="plano"
+            onclick="irParaPlano()"
+        >
+
+            Ver meu plano de estudos
+
+            <span>
+                →
+            </span>
+
+        </button>
+
+    </main>
+
+
+    <script src="diagnostico.js"></script>
+
+</body>
+
+</html>
